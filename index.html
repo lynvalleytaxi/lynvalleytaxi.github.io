@@ -37,29 +37,12 @@ body {font-family: "Lato", sans-serif}
 
   <!-- Automatic Slideshow Images -->
 
-  <div class="mySlides w3-display-container w3-center">
+  <div class="w3-display-container w3-center">
     <img src="/bannerPhotos/main.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/bannerPhotos/valley.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Valley of Rocks</h3>
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/bannerPhotos/regatta.gif" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Lynmouth Harbour</h3>
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/bannerPhotos/coast.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>South West coast path</h3>
-    </div>
-  </div>
+ 
 	
   <!-- The services Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="services">
@@ -73,7 +56,7 @@ body {font-family: "Lato", sans-serif}
 
  <h2 class="w3-wide">Services we offer</h2>
     <ul class="w3-ul">
-  		<li><b>Walking drop-off</b><br>If walking is your passion, we offer a drop-off or collection service either at the start or finish of your walk. Popular local walks include Porlock, Combe Martin, Hunter's Inn, Brendon, County Gate, Rockford, and many others around Exmoor.</li>
+  		<li><b>Walking route drop-offs</b><br>If walking is your passion, we offer a drop-off or collection service either at the start or finish of your walk. Popular local walks include Porlock, Combe Martin, Hunter's Inn, Brendon, County Gate, Rockford, and many others around Exmoor.</li>
 	        <li><b>Railway station transfers</b><br>Collection and drop-off available for Taunton, Tiverton Parkway, and Barnstaple, 24/7 by prior arrangement. The National Express also departs from Barnstaple.</li>
 	    	<li><b>Airport transfers</b><br>Collection and drop-off available for Bristol International Airport and Exeter International Airport, 24/7 by prior arrangement.</li>
  	 	<li><b>Luggage transfers</b><br>Lynton, Lynmouth, Porlock, Combe Martin and Simonsbath areas covered.</li>
@@ -106,12 +89,7 @@ body {font-family: "Lato", sans-serif}
 
     
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-	       <div class="w3-third w3-margin-bottom">
-          <img src="/destinations/porlockWalk.png" alt="porWalk" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Porlock - Lynmouth</b> (~4 hr walk)</p>
-          </div>     
-	</div>
+	      
         <div class="w3-third w3-margin-bottom">
           <img src="minehead.jpg" alt="Minehead" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
@@ -124,7 +102,6 @@ body {font-family: "Lato", sans-serif}
             <p><b>Hunter's Inn</b></p>
           </div>
         </div>
-	      
 	<div class="w3-third w3-margin-bottom">
           <img src="porlock.jpg" alt="Porlock Weir" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
@@ -136,12 +113,6 @@ body {font-family: "Lato", sans-serif}
           <div class="w3-container w3-white">
             <p><b>Selworthy</b></p>
           </div>
-	</div>
-	<div class="w3-third w3-margin-bottom">
-          <img src="/destinations/woodybay.png" alt="porWalk" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Lynmouth - Woody Bay</b> (~1.5 hr walk)</p>
-          </div>     
 	</div>
 	<div class="w3-third w3-margin-bottom">
           <img src="withypool.jpg" alt="Withypool" style="width:100%" class="w3-hover-opacity">
@@ -205,19 +176,7 @@ body {font-family: "Lato", sans-serif}
 <script>
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
