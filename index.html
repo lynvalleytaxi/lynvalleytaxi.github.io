@@ -174,20 +174,19 @@ body {font-family: "Lato", sans-serif}
         <i class="fa fa-phone" style="width:30px"></i> Phone: 07907 161 666<br>
         <i class="fa fa-envelope" style="width:30px"> </i> Facebook: <a href="https://www.facebook.com/Lyn-Valley-Taxi-Neil-Davey-152324484961879">Lyn Valley Taxi / Neil Davey</a><br>  
       </div>
+   
+
       <div class="w3-col m6">
-	      <form id="contact-form" action="https://formspree.io/lynvalleytaxi@gmail.com" method="POST" onsubmit="return validateForm();">
-	        <label for="name">Name:</label>
-	        <input type="text" id="name" name="name" required><br>
-	        
-	        <label for="email">Email:</label>
-	        <input type="email" id="email" name="email" required><br>
-	        
-	        <label for="message">Message:</label>
-	        <textarea id="message" name="message" rows="4" required></textarea><br>
-	        
-	        <input type="submit" value="Submit">
-	    </form>
+        <form id="contact-form" action="https://formspree.io/f/mleylnlo" method="POST" onsubmit="return validateForm();">
+           <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+	   <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+	   <input class="w3-input w3-border" type="text" placeholder="Phone number" required name="Number">
+          <textarea  class="w3-input w3-border" type="text" placeholder="Message" required name="Message" rows="6"></textarea>
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
       </div>
+
+	    
     </div>
   </div>
   
