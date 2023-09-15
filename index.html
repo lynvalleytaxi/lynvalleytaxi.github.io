@@ -39,6 +39,26 @@ body {font-family: "Lato", sans-serif}
 
             return true;
         }
+
+    // Function to decode the obscured phone number
+    function decodePhoneNumber(encodedPhoneNumber) {
+    const digitMapping = {
+        'A': '0',
+        'B': '1',
+        'C': '6',
+        'D': '7',
+        ' ': ' ', // Preserve spaces
+    };
+
+    return encodedPhoneNumber.split('').map(char => digitMapping[char] || char).join('');
+	}
+
+    // Display the phone number
+    var phoneNumberPlaceholder = document.getElementById("phone-number-placeholder");
+    var encodedPhoneNumber = "ABCD7 BCB DCBDCB"; // Replace with your encoded phone number
+    var decodedPhoneNumber = decodePhoneNumber(encodedPhoneNumber);
+    phoneNumberPlaceholder.textContent = decodedPhoneNumber;
+	
     </script>
 </head>
 <body>
@@ -80,7 +100,7 @@ body {font-family: "Lato", sans-serif}
 
     <p class="w3-opacity"><i>Available 7am - 11pm.</i></p>
     <p class="w3-opacity"><i>All other times available by prior arrangement.</i></p>
-    <h3><b>07907 161 666</b></h3>
+    <h3><b><span id="phone-number-placeholder"></span></b></h3>
 	  <br>
 
  <h2 class="w3-wide">Services we offer</h2>
@@ -94,7 +114,7 @@ body {font-family: "Lato", sans-serif}
 	  
     <p class="w3-opacity"><i>Well behaved dogs welcome.</i></p>
 <br>
-    <p class="w3-center">If you require any other information, including prices, availability, or general local knowledge, please do not hesitate to contact us using the contact form, or by calling <b>07907 161 666</b></p>
+    <p class="w3-center">If you require any other information, including prices, availability, or general local knowledge, please do not hesitate to contact us using the contact form, or by calling <b><span id="phone-number-placeholder"></span></b></p>
 	  <br>
 
 	  <h3 class="w3-wide">Our vehicles</h3>
@@ -174,7 +194,7 @@ body {font-family: "Lato", sans-serif}
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
         <i class="fa fa-map-marker" style="width:30px"></i> Lynton, North Devon<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: 07907 161 666<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: <span id="phone-number-placeholder"></span><br>
         <i class="fa fa-envelope" style="width:30px"> </i> Facebook: <a href="https://www.facebook.com/Lyn-Valley-Taxi-Neil-Davey-152324484961879">Lyn Valley Taxi / Neil Davey</a><br>  
       </div>
    
