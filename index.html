@@ -60,22 +60,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to decode the obscured phone number
     function decodePhoneNumber(encodedPhoneNumber) {
     const digitMapping = {
-        'A': '0',
-        'B': '1',
-        'C': '6',
-        'D': '7',
+	'A': '0',
+	'B': '1',
+	'C': '6',
+	'D': '7',
 	'E': '9',
-        ' ': ' ', // Preserve spaces
+	' ': ' ', // Preserve spaces
     };
 
     return encodedPhoneNumber.split('').map(char => digitMapping[char] || char).join('');
 	}
 
     // Display the phone number
-    var phoneNumberPlaceholder = document.getElementById("phone-number-placeholder");
+    var phoneNumberPlaceholders = document.querySelectorAll("#phone-number-placeholder");
+
     var encodedPhoneNumber = "ADEAD BCB CCC"; // Replace with your encoded phone number
     var decodedPhoneNumber = decodePhoneNumber(encodedPhoneNumber);
-    phoneNumberPlaceholder.textContent = decodedPhoneNumber;
+	for (var i = 0; i < phoneNumberPlaceholders.length; i++) {
+		var phoneNumberPlaceholder = phoneNumberPlaceholders[i];
+		 phoneNumberPlaceholder.textContent = decodedPhoneNumber;
+	}	
 });
 
 		
