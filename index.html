@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'B': '1',
         'C': '6',
         'D': '7',
+	'E': '9',
         ' ': ' ', // Preserve spaces
     };
 
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Display the phone number
     var phoneNumberPlaceholder = document.getElementById("phone-number-placeholder");
-    var encodedPhoneNumber = "ABCD7 BCB DCBDCB"; // Replace with your encoded phone number
+    var encodedPhoneNumber = "ADEAD BCB CCC"; // Replace with your encoded phone number
     var decodedPhoneNumber = decodePhoneNumber(encodedPhoneNumber);
     phoneNumberPlaceholder.textContent = decodedPhoneNumber;
 });
