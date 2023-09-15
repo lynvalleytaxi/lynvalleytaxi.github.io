@@ -16,21 +16,24 @@ body {font-family: "Lato", sans-serif}
         function validateForm() {
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
+	    var number = document.getElementById("number").value;
             var message = document.getElementById("message").value;
 
             // Validate inputs (you can add more specific validation)
-            if (name === "" || email === "" || message === "") {
+            if (name === "" || number === "" || email === "" || message === "") {
                 alert("Please fill in all fields.");
                 return false;
             }
 
             // Sanitize inputs (basic example, you can use libraries for more thorough sanitization)
             name = name.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+	    number = number.replace(/</g, "&lt;").replace(/>/g, "&gt;");
             email = email.replace(/</g, "&lt;").replace(/>/g, "&gt;");
             message = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
             // Assign sanitized values back to the form fields
             document.getElementById("name").value = name;
+	    document.getElementById("number").value = number;
             document.getElementById("email").value = email;
             document.getElementById("message").value = message;
 
