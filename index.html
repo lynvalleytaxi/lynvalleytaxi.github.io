@@ -25,6 +25,20 @@ body {font-family: "Lato", sans-serif}
                 return false;
             }
 
+	    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (emailRegex.test(email))
+	    {
+                alert("Please check the email address for mistakes");
+                return false;
+	    }
+
+	    const phoneRegex = /^(\+\d{1,3}\s?)?(\d{3,4}\s?(\d\s?){6,10})$/;
+	    if (phoneRegex.test(number))
+	    {
+                alert("Please check the phone number for mistakes");
+                return false;
+	    }
+		
             // Sanitize inputs (basic example, you can use libraries for more thorough sanitization)
             name = name.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 	    number = number.replace(/</g, "&lt;").replace(/>/g, "&gt;");
