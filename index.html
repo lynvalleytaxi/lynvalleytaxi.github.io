@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+	  <a href="#intro" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INTRO</a>
     <a href="#services" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICES</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
   </div>
@@ -99,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+	  <a href="#intro" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INTRO</a>
   <a href="#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SERVICES</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
 </div>
@@ -116,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
  
 	
   <!-- The services Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="services">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="intro">
     <h2 class="w3-wide">Lyn Valley Taxi</h2>
     <p class="w3-center">Established in 2008, Lyn Valley Taxi is a local taxi service based in Lynton, offering a friendly and reliable service for all types of journeys and tours around Exmoor.</p>
 
@@ -124,8 +126,10 @@ document.addEventListener('DOMContentLoaded', function() {
     <p class="w3-opacity"><i>All other times available by prior arrangement.</i></p>
     <h3><b><span id="phone-number-placeholder"></span></b></h3>
 	  <img src="neil.jpg" class="w3-round" alt="Neil Davey" style="width:50%">
+  </div>
  <br><br>
 	  
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="services">
  <h2 class="w3-wide">Services we offer</h2>
     <ul class="w3-ul">
   		<li><img src="sign5.png" alt="Footpath" style="height:20px">
